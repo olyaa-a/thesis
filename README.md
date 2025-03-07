@@ -12,3 +12,4 @@
 Ось так він наразі виглядає в симуляції:
 
 ![IMG_1969](https://github.com/user-attachments/assets/2e02c36a-eebf-4d2e-8cc5-9ca659323501)
+
