@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mg400">
+
+  <xacro:property name="PI" value="3.14159265359" />
+
+  <ros2_control name="mg400_system" type="system">
+    <hardware>
+      <plugin>mg400_hardware_interface/MG400HardwareInterface</plugin>
+    </hardware>
+
+    <joint name="joint_1">
+      <command_interface name="position">
+        <param name="min">-2.7925</param> <!-- -160° -->
+        <param name="max">2.7925</param>  <!-- 160° -->
+      </command_interface>
+      <state_interface name="position"/>
+    </joint>
+
+    <joint name="joint_2">
+      <command_interface name="position">
+        <param name="min">-0.4363</param> <!-- -25° -->
+        <param name="max">1.4835</param>  <!-- 85° -->
+      </command_interface>
+      <state_interface name="position"/>
+    </joint>
+
+    <joint name="joint_3">
+      <command_interface name="position">
+        <param name="min">-0.4363</param> <!-- -25° -->
+        <param name="max">1.8326</param>  <!-- 105° -->
+      </command_interface>
+      <state_interface name="position"/>
+    </joint>
+
+    <joint name="joint_4">
+      <command_interface name="position">
+        <param name="min">-6.2832</param> <!-- -360° -->
+        <param name="max">6.2832</param>  <!-- 360° -->
+      </command_interface>
+      <state_interface name="position"/>
+    </joint>
+
+  </ros2_control>
+
+</robot>
