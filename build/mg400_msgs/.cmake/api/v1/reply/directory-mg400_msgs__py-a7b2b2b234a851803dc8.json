@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "mg400_msgs__py",
+		"source" : "/home/olha/ws_ros2/build/mg400_msgs/mg400_msgs__py"
+	}
+}

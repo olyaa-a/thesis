@@ -1,0 +1,1 @@
+/home/olha/ws_ros2/build/mg400_common/ament_cmake_core/mg400_commonConfig.cmake

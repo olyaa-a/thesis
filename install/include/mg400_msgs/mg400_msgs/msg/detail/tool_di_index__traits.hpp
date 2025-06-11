@@ -1,0 +1,1 @@
+/home/olha/ws_ros2/build/mg400_msgs/rosidl_generator_cpp/mg400_msgs/msg/detail/tool_di_index__traits.hpp

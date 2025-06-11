@@ -1,0 +1,15 @@
+/home/olha/ws_ros2/install/share/ament_index/resource_index/package_run_dependencies/mg400
+/home/olha/ws_ros2/install/share/ament_index/resource_index/parent_prefix_path/mg400
+/home/olha/ws_ros2/install/share/mg400/environment/ament_prefix_path.sh
+/home/olha/ws_ros2/install/share/mg400/environment/ament_prefix_path.dsv
+/home/olha/ws_ros2/install/share/mg400/environment/path.sh
+/home/olha/ws_ros2/install/share/mg400/environment/path.dsv
+/home/olha/ws_ros2/install/share/mg400/local_setup.bash
+/home/olha/ws_ros2/install/share/mg400/local_setup.sh
+/home/olha/ws_ros2/install/share/mg400/local_setup.zsh
+/home/olha/ws_ros2/install/share/mg400/local_setup.dsv
+/home/olha/ws_ros2/install/share/mg400/package.dsv
+/home/olha/ws_ros2/install/share/ament_index/resource_index/packages/mg400
+/home/olha/ws_ros2/install/share/mg400/cmake/mg400Config.cmake
+/home/olha/ws_ros2/install/share/mg400/cmake/mg400Config-version.cmake
+/home/olha/ws_ros2/install/share/mg400/package.xml

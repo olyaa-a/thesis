@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>mg400_controller</name>
+  <version>0.0.0</version>
+  <description>Controller configurations for the Dobot MG400 arm.</description>
+  <maintainer email="olleshchak@gmail.com">olha</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Build tool -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Runtime dependencies for ros2_control & controllers -->
+  <depend>controller_manager</depend>
+  <depend>joint_state_broadcaster</depend>
+  <depend>joint_trajectory_controller</depend>
+  <depend>ros2_control</depend>              <!-- replaced old ros2_control_node -->  
+  <depend>hardware_interface</depend>
+  <depend>controller_interface</depend>
+
+  <!-- Linting -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

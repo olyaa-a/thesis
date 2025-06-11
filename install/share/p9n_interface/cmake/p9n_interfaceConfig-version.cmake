@@ -1,0 +1,1 @@
+/home/olha/ws_ros2/build/p9n_interface/ament_cmake_core/p9n_interfaceConfig-version.cmake

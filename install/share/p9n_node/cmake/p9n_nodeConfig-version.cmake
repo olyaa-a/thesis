@@ -1,0 +1,1 @@
+/home/olha/ws_ros2/build/p9n_node/ament_cmake_core/p9n_nodeConfig-version.cmake

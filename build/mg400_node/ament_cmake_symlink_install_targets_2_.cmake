@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/olha/ws_ros2/build/mg400_node/joint_state_publisher_gui" "/home/olha/ws_ros2/build/mg400_node/joint_command_publisher_gui" "TARGETS" "joint_state_publisher_gui" "joint_command_publisher_gui" "DESTINATION" "lib/mg400_node")

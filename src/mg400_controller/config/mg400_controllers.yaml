@@ -1,0 +1,103 @@
+# mg400_controller/config/mg400_controllers.yaml
+
+# 1) Controller manager parameters
+controller_manager:
+  ros__parameters:
+    # Use Gazebo’s simulated /clock
+    use_sim_time: true
+
+    # Hz at which the controller manager update loop runs
+    update_rate: 50
+
+# 2) Joint state broadcaster
+joint_state_broadcaster:
+  ros__parameters:
+    type: joint_state_broadcaster/JointStateBroadcaster
+
+# 3) Arm trajectory controller
+arm_controller:
+  ros__parameters:
+    type: joint_trajectory_controller/JointTrajectoryController
+
+    # Exactly the names of the MG400 arm joints
+    joints:
+      - mg400_j1
+      - mg400_j2_1
+      - mg400_j2_2
+      - mg400_j3_1
+      - mg400_j3_2
+      - mg400_j4_1
+      - mg400_j4_2
+      - mg400_j5
+
+    # Interfaces the controller will command and observe
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+    # Publishing and monitoring rates
+    state_publish_rate: 50.0       # Hz
+    action_monitor_rate: 20.0      # Hz
+
+    # If true, controllers send commands open-loop (no position feedback)
+    open_loop_control: true
+    allow_partial_joints_goal: false
+
+    # Tolerances and goal constraints per joint
+    constraints:
+      stopped_velocity_tolerance: 0.01
+      goal_time: 0.0
+      mg400_j1:
+        trajectory: 0.05
+        goal:       0.03
+      mg400_j2_1:
+        trajectory: 0.05
+        goal:       0.03
+      mg400_j2_2:
+        trajectory: 0.05
+        goal:       0.03
+      mg400_j3_1:
+        trajectory: 0.05
+        goal:       0.03
+      mg400_j3_2:
+        trajectory: 0.05
+        goal:       0.03
+      mg400_j4_1:
+        trajectory: 0.05
+        goal:       0.03
+      mg400_j4_2:
+        trajectory: 0.05
+        goal:       0.03
+      mg400_j5:
+        trajectory: 0.05
+        goal:       0.03
+
+# 4) Gripper trajectory controller
+gripper_controller:
+  ros__parameters:
+    type: joint_trajectory_controller/JointTrajectoryController
+
+    # The fixed “gripper_joint” that drives the vacuum adapter
+    joints:
+      - gripper_joint
+
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+
+    open_loop_control: true
+    allow_partial_joints_goal: false
+
+    constraints:
+      stopped_velocity_tolerance: 0.01
+      goal_time: 0.0
+      gripper_joint:
+        trajectory: 0.05
+        goal:       0.03

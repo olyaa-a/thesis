@@ -1,0 +1,1 @@
+/home/olha/ws_ros2/build/mg400_rviz_plugin/ament_cmake_core/mg400_rviz_pluginConfig-version.cmake

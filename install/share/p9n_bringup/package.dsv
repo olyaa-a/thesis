@@ -1,0 +1,12 @@
+source;share/p9n_bringup/hook/cmake_prefix_path.ps1
+source;share/p9n_bringup/hook/cmake_prefix_path.dsv
+source;share/p9n_bringup/hook/cmake_prefix_path.sh
+source;share/p9n_bringup/hook/ld_library_path_lib.ps1
+source;share/p9n_bringup/hook/ld_library_path_lib.dsv
+source;share/p9n_bringup/hook/ld_library_path_lib.sh
+source;share/p9n_bringup/hook/pythonpath.ps1
+source;share/p9n_bringup/hook/pythonpath.dsv
+source;share/p9n_bringup/hook/pythonpath.sh
+source;share/p9n_bringup/hook/ament_prefix_path.ps1
+source;share/p9n_bringup/hook/ament_prefix_path.dsv
+source;share/p9n_bringup/hook/ament_prefix_path.sh

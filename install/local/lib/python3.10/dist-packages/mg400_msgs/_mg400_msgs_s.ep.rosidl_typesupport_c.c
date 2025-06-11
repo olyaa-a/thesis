@@ -1,0 +1,1 @@
+/home/olha/ws_ros2/build/mg400_msgs/rosidl_generator_py/mg400_msgs/_mg400_msgs_s.ep.rosidl_typesupport_c.c

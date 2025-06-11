@@ -1,0 +1,17 @@
+/home/olha/ws_ros2/install/share/mg400_controller/config/mg400_controllers.yaml
+/home/olha/ws_ros2/install/share/ament_index/resource_index/package_run_dependencies/mg400_controller
+/home/olha/ws_ros2/install/share/ament_index/resource_index/parent_prefix_path/mg400_controller
+/home/olha/ws_ros2/install/share/mg400_controller/environment/ament_prefix_path.sh
+/home/olha/ws_ros2/install/share/mg400_controller/environment/ament_prefix_path.dsv
+/home/olha/ws_ros2/install/share/mg400_controller/environment/path.sh
+/home/olha/ws_ros2/install/share/mg400_controller/environment/path.dsv
+/home/olha/ws_ros2/install/share/mg400_controller/local_setup.bash
+/home/olha/ws_ros2/install/share/mg400_controller/local_setup.sh
+/home/olha/ws_ros2/install/share/mg400_controller/local_setup.zsh
+/home/olha/ws_ros2/install/share/mg400_controller/local_setup.dsv
+/home/olha/ws_ros2/install/share/mg400_controller/package.dsv
+/home/olha/ws_ros2/install/share/ament_index/resource_index/packages/mg400_controller
+/home/olha/ws_ros2/install/share/mg400_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+/home/olha/ws_ros2/install/share/mg400_controller/cmake/mg400_controllerConfig.cmake
+/home/olha/ws_ros2/install/share/mg400_controller/cmake/mg400_controllerConfig-version.cmake
+/home/olha/ws_ros2/install/share/mg400_controller/package.xml

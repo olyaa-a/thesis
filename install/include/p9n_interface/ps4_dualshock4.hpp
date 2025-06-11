@@ -1,0 +1,1 @@
+/home/olha/ws_ros2/src/PlayStation-JoyInterface-ROS2/p9n_interface/include/p9n_interface/ps4_dualshock4.hpp

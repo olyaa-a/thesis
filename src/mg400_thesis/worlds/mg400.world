@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <!-- Освітлення та небо -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Плагін для збору метрик продуктивності -->
+    <plugin name="performance_metrics"
+            filename="libgazebo_performance_metrics.so">
+      <!-- як часто виводити статистику (Гц) -->
+      <update_rate>1.0</update_rate>
+    </plugin>
+
+    <!-- За потреби можна додати інші плагіни, світильники або фізичні налаштування -->
+  </world>
+</sdf>

@@ -1,0 +1,11 @@
+/home/olha/ws_ros2/build/mg400_joy/CMakeFiles/uninstall.dir
+/home/olha/ws_ros2/build/mg400_joy/CMakeFiles/mg400_joy_uninstall.dir
+/home/olha/ws_ros2/build/mg400_joy/CMakeFiles/mg400_joy_interface_node.dir
+/home/olha/ws_ros2/build/mg400_joy/CMakeFiles/mg400_joy_interface_node_exec.dir
+/home/olha/ws_ros2/build/mg400_joy/CMakeFiles/test.dir
+/home/olha/ws_ros2/build/mg400_joy/CMakeFiles/edit_cache.dir
+/home/olha/ws_ros2/build/mg400_joy/CMakeFiles/rebuild_cache.dir
+/home/olha/ws_ros2/build/mg400_joy/CMakeFiles/list_install_components.dir
+/home/olha/ws_ros2/build/mg400_joy/CMakeFiles/install.dir
+/home/olha/ws_ros2/build/mg400_joy/CMakeFiles/install/local.dir
+/home/olha/ws_ros2/build/mg400_joy/CMakeFiles/install/strip.dir

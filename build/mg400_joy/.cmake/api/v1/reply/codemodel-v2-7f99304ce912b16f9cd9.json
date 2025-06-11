@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f254ec5955ea655c92a1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mg400_joy",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_joy_interface_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_joy_interface_node-54ef3191ac264a37c16d.json",
+					"name" : "mg400_joy_interface_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_joy_interface_node_exec::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_joy_interface_node_exec-8258218d774f02cb819d.json",
+					"name" : "mg400_joy_interface_node_exec",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_joy_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_joy_uninstall-55bb964e405257e75650.json",
+					"name" : "mg400_joy_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0002010d4a47eabb4f87.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/olha/ws_ros2/build/mg400_joy",
+		"source" : "/home/olha/ws_ros2/src/MG400_ROS2/mg400_joy"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

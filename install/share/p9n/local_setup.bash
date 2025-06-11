@@ -1,0 +1,1 @@
+/home/olha/ws_ros2/build/p9n/ament_cmake_environment_hooks/local_setup.bash

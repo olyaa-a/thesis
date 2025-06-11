@@ -1,0 +1,9 @@
+/home/olha/ws_ros2/build/mg400/CMakeFiles/uninstall.dir
+/home/olha/ws_ros2/build/mg400/CMakeFiles/mg400_uninstall.dir
+/home/olha/ws_ros2/build/mg400/CMakeFiles/test.dir
+/home/olha/ws_ros2/build/mg400/CMakeFiles/edit_cache.dir
+/home/olha/ws_ros2/build/mg400/CMakeFiles/rebuild_cache.dir
+/home/olha/ws_ros2/build/mg400/CMakeFiles/list_install_components.dir
+/home/olha/ws_ros2/build/mg400/CMakeFiles/install.dir
+/home/olha/ws_ros2/build/mg400/CMakeFiles/install/local.dir
+/home/olha/ws_ros2/build/mg400/CMakeFiles/install/strip.dir

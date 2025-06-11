@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b0920925db9fd4f0cf31.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "mg400_msgs__py",
+					"jsonFile" : "directory-mg400_msgs__py-a7b2b2b234a851803dc8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/olha/ws_ros2/build/mg400_msgs/mg400_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "mg400_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_mg400_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_mg400_msgs_egg-71470fa034b2e2f3483c.json",
+					"name" : "ament_cmake_python_build_mg400_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_mg400_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_mg400_msgs-026ff740f7c47d2d1a1c.json",
+					"name" : "ament_cmake_python_symlink_mg400_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs-6396b529afdbbb2bc11f.json",
+					"name" : "mg400_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs__cpp-cfe208695303772d2c07.json",
+					"name" : "mg400_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "mg400_msgs__py::@019a4c1f37eff4121ec5",
+					"jsonFile" : "target-mg400_msgs__py-0c59177d07e6dd8cd01b.json",
+					"name" : "mg400_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs__rosidl_generator_c-8a58a54e4cc96a0f138d.json",
+					"name" : "mg400_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs__rosidl_generator_py-d51654bdf36d10e379aa.json",
+					"name" : "mg400_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs__rosidl_typesupport_c-12834f237efc5ad07231.json",
+					"name" : "mg400_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs__rosidl_typesupport_c__pyext-1d60efce426aeb13876b.json",
+					"name" : "mg400_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs__rosidl_typesupport_cpp-d04d3297c6a887f37914.json",
+					"name" : "mg400_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs__rosidl_typesupport_fastrtps_c-3312607a48d28a67fb39.json",
+					"name" : "mg400_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs__rosidl_typesupport_fastrtps_c__pyext-d187b53424efce2ae6ca.json",
+					"name" : "mg400_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs__rosidl_typesupport_fastrtps_cpp-0de8836fcd5ab35cf50e.json",
+					"name" : "mg400_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs__rosidl_typesupport_introspection_c-9005cb26c851d228e966.json",
+					"name" : "mg400_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs__rosidl_typesupport_introspection_c__pyext-795b6361f49d85a99a70.json",
+					"name" : "mg400_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs__rosidl_typesupport_introspection_cpp-932e8eb9cd3c613cd2a6.json",
+					"name" : "mg400_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_msgs_uninstall-36391f5792a997b0ee60.json",
+					"name" : "mg400_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4637e2cc041918583e25.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/olha/ws_ros2/build/mg400_msgs",
+		"source" : "/home/olha/ws_ros2/src/MG400_ROS2/mg400_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

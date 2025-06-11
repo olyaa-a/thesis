@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-96fc59d81e9c04da1d5d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "p9n_node",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "p9n_node_teleop_twist_joy_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p9n_node_teleop_twist_joy_node-a27e7349d48a64db5ac0.json",
+					"name" : "p9n_node_teleop_twist_joy_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p9n_node_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p9n_node_uninstall-1bd5fdbf5dbbc1193bcd.json",
+					"name" : "p9n_node_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "teleop_twist_joy_node_exec::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-teleop_twist_joy_node_exec-56caf55130751c1196ce.json",
+					"name" : "teleop_twist_joy_node_exec",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0923e817c3ed3db20e11.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/olha/ws_ros2/build/p9n_node",
+		"source" : "/home/olha/ws_ros2/src/PlayStation-JoyInterface-ROS2/p9n_node"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

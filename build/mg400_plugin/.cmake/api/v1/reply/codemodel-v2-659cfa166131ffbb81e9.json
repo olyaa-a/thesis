@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e821963509cab8db46d7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mg400_plugin",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_plugin_dashboard_api::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_plugin_dashboard_api-6e8e898fe6867ca42ae6.json",
+					"name" : "mg400_plugin_dashboard_api",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_plugin_motion_api::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_plugin_motion_api-3ea71658599f929b9bd1.json",
+					"name" : "mg400_plugin_motion_api",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mg400_plugin_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mg400_plugin_uninstall-9d3be98f4153a3d0b69f.json",
+					"name" : "mg400_plugin_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-69f4fcf39083fff0c28b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/olha/ws_ros2/build/mg400_plugin",
+		"source" : "/home/olha/ws_ros2/src/MG400_ROS2/mg400_plugin"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

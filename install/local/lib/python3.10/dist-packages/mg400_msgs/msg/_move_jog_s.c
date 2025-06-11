@@ -1,0 +1,1 @@
+/home/olha/ws_ros2/build/mg400_msgs/rosidl_generator_py/mg400_msgs/msg/_move_jog_s.c

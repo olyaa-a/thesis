@@ -1,0 +1,1 @@
+/home/olha/ws_ros2/build/p9n_test/ament_cmake_core/p9n_testConfig.cmake

@@ -1,0 +1,15 @@
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/uninstall.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/mg400_node_uninstall.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/joint_state_publisher_gui.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/joint_command_publisher_gui.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/mg400_node.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/mg400_node_exec.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/test.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/edit_cache.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/rebuild_cache.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/list_install_components.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/install.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/install/local.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/install/strip.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/joint_state_publisher_gui_autogen.dir
+/home/olha/ws_ros2/build/mg400_node/CMakeFiles/joint_command_publisher_gui_autogen.dir

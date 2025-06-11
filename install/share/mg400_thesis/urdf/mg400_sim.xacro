@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="mg400_sim">
+
+  <!-- Include the Dobot MG400 macro -->
+  <xacro:include filename="$(find mg400_description)/urdf/mg400.xacro"/>
+
+  <!-- Launch arguments -->
+  <xacro:arg name="prefix" default=""/>
+  <xacro:arg name="workspace_visible" default="true"/>
+
+  <!-- Dummy parent frame -->
+  <link name="$(arg prefix)arm_frame_link_offset"/>
+
+  <!-- Generate links & joints from macro -->
+  <xacro:mg400
+    prefix="$(arg prefix)"
+    parent="$(arg prefix)arm_frame_link_offset"
+    workspace_visible="$(arg workspace_visible)">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </xacro:mg400>
+
+  <!-- ========================= -->
+  <!-- Vacuum Suction Cup Gripper -->
+  <!-- ========================= -->
+
+  <!-- Suction cup link (φ16 mm × 2.5 mm) -->
+  <link name="$(arg prefix)vacuum_gripper_link">
+    <visual>
+      <!-- place cup 5 cm below flange -->
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <geometry>
+        <!-- real cup: diameter 16 mm ⇒ radius 0.008 m; thickness 2.5 mm ⇒ length 0.0025 m -->
+        <cylinder length="0.0025" radius="0.008"/>
+      </geometry>
+      <material name="VacuumCupMaterial">
+        <color rgba="0 0.2 1 0.7"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.0025" radius="0.008"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.02"/>
+      <inertia ixx="1e-6" ixy="0.0" ixz="0.0"
+               iyy="1e-6" iyz="0.0"
+               izz="1e-6"/>
+    </inertial>
+  </link>
+
+  <!-- Fixed joint to attach cup to end-effector flange -->
+  <joint name="$(arg prefix)vacuum_gripper_joint" type="fixed">
+    <parent link="$(arg prefix)mg400_end_effector_flange"/>
+    <child  link="$(arg prefix)vacuum_gripper_link"/>
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Gazebo plugin stub for vacuum control -->
+  <gazebo reference="$(arg prefix)vacuum_gripper_link">
+    <plugin name="vacuum_gripper_plugin"
+            filename="libgazebo_ros_vacuum_plugin.so">
+      <topic>~/vacuum/enable</topic>
+    </plugin>
+  </gazebo>
+
+  <!-- ROS2 Control configuration -->
+  <ros2_control name="controller_manager" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+    <!-- Joint interfaces -->
+    <joint name="mg400_j1">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+    </joint>
+    <joint name="mg400_j2_1">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+    </joint>
+    <joint name="mg400_j2_2">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+    </joint>
+    <joint name="mg400_j3_1">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+    </joint>
+    <joint name="mg400_j3_2">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+    </joint>
+    <joint name="mg400_j4_1">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+    </joint>
+    <joint name="mg400_j4_2">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+    </joint>
+    <joint name="mg400_j5">
+      <command_interface name="position"/>
+      <state_interface   name="position"/>
+    </joint>
+  </ros2_control>
+
+  <!-- Gazebo plugin for ROS2 Control -->
+  <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <robotParam>robot_description</robotParam>
+      <parameters>$(find mg400_controller)/config/mg400_controllers.yaml</parameters>
+    </plugin>
+    <static>true</static>
+  </gazebo>
+
+  <!-- Transmissions -->
+  <transmission name="mg400_j1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mg400_j1">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mg400_j1_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="mg400_j2_1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mg400_j2_1">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mg400_j2_1_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="mg400_j2_2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mg400_j2_2">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mg400_j2_2_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="mg400_j3_1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mg400_j3_1">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mg400_j3_1_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="mg400_j3_2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mg400_j3_2">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mg400_j3_2_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="mg400_j4_1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mg400_j4_1">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mg400_j4_1_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="mg400_j4_2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mg400_j4_2">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mg400_j4_2_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="mg400_j5_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="mg400_j5">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="mg400_j5_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="gripper_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="gripper_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="gripper_joint_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+</robot>
